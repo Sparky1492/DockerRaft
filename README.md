@@ -13,6 +13,6 @@ The plan is to have the option to have local archive directory and/or also offer
 Using a .env file in the same folder with the main.sh, does not require any arguments, unless you want it to override your variables set in the .env.
 
 
-| ARG                  | Description             | .env ENV variable           | Default |
-|----------------------|----------------------|-------------------|---------|
-| -dF (Example)      | Docker file directory           | /home/user/docker/compose                  |         |
+| ARG                  | Description             | .env ENV variable           |
+|----------------------|----------------------|-------------------|
+| -dF (Example)      | Docker file directory           | /home/user/docker/compose                  |

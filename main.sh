@@ -61,11 +61,12 @@ cd $docker_archives
 #scp option
 scp $docker_archives/docker-files-archive_$archiveDate /mnt/data #need variable for remote folder 
 
-#rsync local option
+#rsync local option \\ -a Archive  -z Compress  -v Verbose  -h human-readable -P Progress
 rsync -a -P $docker_archives
 
 #rsync remote option
 rsync -a -P $docker_archives $remote_user@$remote_host:/mnt/data
+# rsync -avhP path/to/local_file remote_host:path/to/remote_directory
 
 #clean-up remote folder
 cleaning_remote{}
